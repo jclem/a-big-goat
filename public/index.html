@@ -1,0 +1,24 @@
+<!doctype>
+
+<html>
+<head>
+<title>goat</title>
+<style>
+*{margin:0;padding:0;}
+</style>
+</head>
+<body>
+<img src='/goat.gif'>
+<script>
+  var theGoat = document.querySelector('img');
+  resize(theGoat);
+
+  window.addEventListener('resize', function() {
+      resize(theGoat);
+  });
+
+  function resize(aGoat) {
+    aGoat.width = window.innerWidth;
+  }
+</script>
+</body>
